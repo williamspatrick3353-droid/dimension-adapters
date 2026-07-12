@@ -1,7 +1,7 @@
 import { FetchOptions, SimpleAdapter } from "../adapters/types";
 import { CHAIN } from "../helpers/chains";
 
-const CIRCLE_GATEWAY_CONTRACT = "0x77777777Dcc4d5A8B6E418Fd04D8997ef11000eE";
+const CIRCLE_GATEWAY_CONTRACT = "0x46531ea0E7cec64b14181d45F8C6798a1cE45da1";
 const GATEWAY_BURNED_EVENT = "event GatewayBurned(address indexed token, address indexed depositor, bytes32 indexed transferSpecHash, uint32 destinationDomain, bytes32 destinationRecipient, address signer, uint256 value, uint256 fee, uint256 fromAvailable, uint256 fromWithdrawing)";
 const USDC_DECIMALS = 6;
 
