@@ -14,78 +14,78 @@ type Config = {
 
 const configs: Record<string, Config> = {
   "benqi-lending": {
-    chains: { [CHAIN.AVAX]: { comptroller: "0x486Af39519B4Dc9a7fCcd318217352830E8AD9b4", start: '2021-08-18' } },
+    chains: { [CHAIN.AVAX]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2021-08-18' } },
     options: { holdersRevenueRatio: 0, protocolRevenueRatio: 1 },
   },
   "canto-lending": {
-    chains: { [CHAIN.CANTO]: { comptroller: "0x5E23dC409Fc2F832f83CEc191E245A191a4bCc5C", start: '2022-08-18' } },
+    chains: { [CHAIN.CANTO]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2022-08-18' } },
     options: { protocolRevenueRatio: 1 },
   },
   "capyfi": {
     chains: {
-      [CHAIN.ETHEREUM]: { comptroller: "0x0b9af1fd73885aD52680A1aeAa7A3f17AC702afA", start: '2025-05-20' },
-      [CHAIN.WC]: { comptroller: "0x589d63300976759a0fc74ea6fA7D951f581252D7", start: '2025-07-23' },
+      [CHAIN.ETHEREUM]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2025-05-20' },
+      [CHAIN.WC]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2025-07-23' },
     },
-    options: { protocolRevenueRatio: 1, blacklists: ["0xbaa6bc4e24686d710b9318b49b0bb16ec7c46bfa"] },
+    options: { protocolRevenueRatio: 1, blacklists: ["0x3211d27a1A1B8E40C7974F6951935303e6e56DBE"] },
   },
   "deepr-finance": {
     chains: {
-      [CHAIN.SHIMMER_EVM]: { comptroller: "0xF7E452A8685D57083Edf4e4CC8064EcDcF71D7B7", start: '2024-01-09' },
-      [CHAIN.IOTAEVM]: { comptroller: "0xee07121d97FDEA35675e02017837a7a43aeDa48F", start: '2024-08-22' },
+      [CHAIN.SHIMMER_EVM]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2024-01-09' },
+      [CHAIN.IOTAEVM]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2024-08-22' },
     },
     options: { holdersRevenueRatio: 1 },
   },
   "elara": {
-    chains: { [CHAIN.ZIRCUIT]: { comptroller: "0x695aCEf58D1a10Cf13CBb4bbB2dfB7eDDd89B296", start: '2024-11-20' } },
+    chains: { [CHAIN.ZIRCUIT]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2024-11-20' } },
     options: { protocolRevenueRatio: 1 },
   },
   "fluxfinance": {
-    chains: { [CHAIN.ETHEREUM]: { comptroller: "0x95Af143a021DF745bc78e845b54591C53a8B3A51", start: '2023-02-02' } },
+    chains: { [CHAIN.ETHEREUM]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2023-02-02' } },
     options: { protocolRevenueRatio: 1 },
   },
   "hover": {
-    chains: { [CHAIN.KAVA]: { comptroller: "0x3A4Ec955a18eF6eB33025599505E7d404a4d59eC", start: '2023-11-24' } },
+    chains: { [CHAIN.KAVA]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2023-11-24' } },
   },
   "machfi": {
-    chains: { [CHAIN.SONIC]: { comptroller: "0x646F91AbD5Ab94B76d1F9C5D9490A2f6DDf25730", start: '2025-01-01' } },
+    chains: { [CHAIN.SONIC]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2025-01-01' } },
     options: { protocolRevenueRatio: 1 },
   },
   "mendi-finance": {
-    chains: { [CHAIN.LINEA]: { comptroller: "0x1b4d3b0421dDc1eB216D230Bc01527422Fb93103", start: '2023-08-18' } },
+    chains: { [CHAIN.LINEA]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2023-08-18' } },
     options: { holdersRevenueRatio: 1, protocolRevenueRatio: 0 },
   },
   "morpho-compound": {
-    chains: { [CHAIN.ETHEREUM]: { comptroller: "0x930f1b46e1d081ec1524efd95752be3ece51ef67", start: '2023-07-01' } },
+    chains: { [CHAIN.ETHEREUM]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2023-07-01' } },
   },
   "qie-lend": {
-    chains: { [CHAIN.QIEV3]: { comptroller: "0x69a31E3D361C69B37463aa67Ef93067dC760fBD4" } },
+    chains: { [CHAIN.QIEV3]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE" } },
   },
   "strike": {
-    chains: { [CHAIN.ETHEREUM]: { comptroller: "0xe2e17b2CBbf48211FA7eB8A875360e5e39bA2602", start: '2021-03-30' } },
-    options: { useExchangeRate: true, blacklists: ["0xc13fdf3af7ec87dca256d9c11ff96405d360f522", "0x1ebfd36223079dc79fefc62260db9e25f3f5e2c7"], protocolRevenueRatio: 1 },
+    chains: { [CHAIN.ETHEREUM]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2021-03-30' } },
+    options: { useExchangeRate: true, blacklists: ["0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", "0x1ebfd36223079dc79fefc62260db9e25f3f5e2c7"], protocolRevenueRatio: 1 },
   },
   "sumer": {
     chains: {
-      [CHAIN.METER]: { comptroller: "0xcB4cdDA50C1B6B0E33F544c98420722093B7Aa88", start: '2023-11-13' },
-      [CHAIN.BASE]: { comptroller: "0x611375907733D9576907E125Fb29704712F0BAfA", start: '2024-01-09' },
-      [CHAIN.ARBITRUM]: { comptroller: "0xBfb69860C91A22A2287df1Ff3Cdf0476c5aab24A", start: '2023-12-04' },
-      [CHAIN.ETHEREUM]: { comptroller: "0x60A4570bE892fb41280eDFE9DB75e1a62C70456F", start: '2024-07-07' },
-      [CHAIN.ZKLINK]: { comptroller: "0xe6099D924efEf37845867D45E3362731EaF8A98D", start: '2024-08-12' },
-      [CHAIN.BSQUARED]: { comptroller: "0xdD9C863197df28f47721107f94eb031b548B5e48", start: '2024-10-18' },
-      [CHAIN.CORE]: { comptroller: "0x7f5a7aE2688A7ba6a9B36141335044c058a08b3E", start: '2024-12-13' },
-      [CHAIN.BSC]: { comptroller: "0x15B5220024c3242F7D61177D6ff715cfac4909eD", start: '2024-08-31' },
-      [CHAIN.BERACHAIN]: { comptroller: "0x16C7d1F9EA48F7DE5E8bc3165A04E8340Da574fA", start: '2025-02-08' },
-      [CHAIN.HEMI]: { comptroller: "0xB2fF02eEF85DC4eaE95Ab32AA887E0cC69DF8d8E", start: '2025-03-06' },
-      [CHAIN.MONAD]: { comptroller: "0x2d9b96648C784906253c7FA94817437EF59Cf226", start: '2025-10-29' },
+      [CHAIN.METER]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2023-11-13' },
+      [CHAIN.BASE]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2024-01-09' },
+      [CHAIN.ARBITRUM]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2023-12-04' },
+      [CHAIN.ETHEREUM]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2024-07-07' },
+      [CHAIN.ZKLINK]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2024-08-12' },
+      [CHAIN.BSQUARED]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2024-10-18' },
+      [CHAIN.CORE]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2024-12-13' },
+      [CHAIN.BSC]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2024-08-31' },
+      [CHAIN.BERACHAIN]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2025-02-08' },
+      [CHAIN.HEMI]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2025-03-06' },
+      [CHAIN.MONAD]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2025-10-29' },
     },
     options: { protocolRevenueRatio: 1 },
   },
   "takara-lend": {
-    chains: { [CHAIN.SEI]: { comptroller: "0x71034bf5eC0FAd7aEE81a213403c8892F3d8CAeE", start: '2025-02-13' } },
+    chains: { [CHAIN.SEI]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2025-02-13' } },
     options: { useExchangeRate: true, protocolRevenueRatio: 1 },
   },
   "traderjoe-lend": {
-    chains: { [CHAIN.AVAX]: { comptroller: "0xdc13687554205E5b89Ac783db14bb5bba4A1eDaC", start: '2021-10-11' } },
+    chains: { [CHAIN.AVAX]: { comptroller: "0x3211d27a1A1B8E40C7974F6951935303e6e56DBE", start: '2021-10-11' } },
     options: { protocolRevenueRatio: 1 },
   },
 //   "venus-finance": {
