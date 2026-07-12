@@ -11,189 +11,189 @@ const zealousSwapEvent = 'event Swap(address indexed sender, uint amount0In, uin
 
 const configs: Record<string, Record<string, any>> = {
   "katana": {
-    [CHAIN.RONIN]: { factory: '0xb255d6a720bb7c39fee173ce22113397119cb930', userFeesRatio: 1, revenueRatio: 0.0005 / 0.003, protocolRevenueRatio: 0.0005 / 0.003 },
+    [CHAIN.RONIN]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1', userFeesRatio: 1, revenueRatio: 0.0005 / 0.003, protocolRevenueRatio: 0.0005 / 0.003 },
   },
   'fusionx-v2': {
-    [CHAIN.MANTLE]: { factory: '0xe5020961fa51ffd3662cdf307def18f9a87cce7c', fees: 0.25 / 100, userFeesRatio: 1, revenueRatio: 1 / 3, protocolRevenueRatio: 1 / 6 },
+    [CHAIN.MANTLE]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE', fees: 0.25 / 100, userFeesRatio: 1, revenueRatio: 1 / 3, protocolRevenueRatio: 1 / 6 },
   },
   "megaswap": {
-    [CHAIN.MEGAETH]: { factory: '0x72B94fA9F854Da1bCCD03F3bAB54cF60C32193F3' },
+    [CHAIN.MEGAETH]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "warpx-v2": {
     [CHAIN.MEGAETH]: { factory: '0xB3Ae00A68F09E8b8a003B7669e2E84544cC4a385' },
   },
   "flowswap-v2": {
-    [CHAIN.FLOW]: { factory: '0x681D1bFE03522e0727730Ba02a05CD3C0a08fa30' },
+    [CHAIN.FLOW]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "Scale": {
-    [CHAIN.BASE]: { factory: '0xEd8db60aCc29e14bC867a497D94ca6e3CeB5eC04' },
+    [CHAIN.BASE]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "dfyn": {
-    [CHAIN.POLYGON]: { factory: '0xE7Fb3e833eFE5F9c441105EB65Ef8b261266423B' },
+    [CHAIN.POLYGON]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "shibaswap": {
-    [CHAIN.ETHEREUM]: { factory: '0x115934131916c8b277dd010ee02de363c09d037c' },
-    [CHAIN.SHIBARIUM]: { factory: '0xc2b4218F137e3A5A9B98ab3AE804108F0D312CBC', start: '5-15-24' },
+    [CHAIN.ETHEREUM]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
+    [CHAIN.SHIBARIUM]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1', start: '5-15-24' },
   },
   "kittypunch": {
-    [CHAIN.FLOW]: { factory: '0x29372c22459a4e373851798bFd6808e71EA34A71' },
+    [CHAIN.FLOW]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "linehub-v2": {
-    [CHAIN.LINEA]: { factory: '0x7811DeF28977060784cC509641f2DD23584b7671' },
+    [CHAIN.LINEA]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "metavault-amm-v2": {
-    [CHAIN.SCROLL]: { factory: '0xCc570Ec20eCB62cd9589FA33724514BDBc98DC7E' },
-    [CHAIN.LINEA]: { factory: '0xCc570Ec20eCB62cd9589FA33724514BDBc98DC7E' },
+    [CHAIN.SCROLL]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
+    [CHAIN.LINEA]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "rockswap": {
-    [CHAIN.BITROCK]: { factory: '0x02c73ecb9B82e545E32665eDc42Ae903F8AA86a9' },
+    [CHAIN.BITROCK]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "sonicxswap": {
-    [CHAIN.SONIC]: { factory: '0x0569F2A6B281b139bC164851cf86E4a792ca6e81' },
+    [CHAIN.SONIC]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "Viridian": {
-    [CHAIN.CORE]: { factory: '0xb54a83cfEc6052E05BB2925097FAff0EC22893F3' },
+    [CHAIN.CORE]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "luaswap": {
-    [CHAIN.ETHEREUM]: { factory: '0x0388C1E0f210AbAe597B7DE712B9510C6C36C857' },
+    [CHAIN.ETHEREUM]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "bakeryswap": {
-    [CHAIN.BSC]: { factory: '0x01bF7C66c6BD861915CdaaE475042d3c4BaE16A7' },
+    [CHAIN.BSC]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "abcdefx": {
-    [CHAIN.FANTOM]: { factory: '0x01f43d2a7f4554468f77e06757e707150e39130c' },
-    [CHAIN.KCC]: { factory: '0x01f43d2a7f4554468f77e06757e707150e39130c' },
-    [CHAIN.KAVA]: { factory: '0x01f43d2a7f4554468f77e06757e707150e39130c' },
+    [CHAIN.FANTOM]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
+    [CHAIN.KCC]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
+    [CHAIN.KAVA]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "alita-finance": {
-    [CHAIN.BSC]: { factory: '0xC7a506ab3ac668EAb6bF9eCf971433D6CFeF05D9' },
+    [CHAIN.BSC]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "archerswap": {
-    [CHAIN.CORE]: { factory: '0xe0b8838e8d73ff1CA193E8cc2bC0Ebf7Cf86F620' },
+    [CHAIN.CORE]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "astroswap": {
-    [CHAIN.VELAS]: { factory: '0xe82d721A6CdeC2f86e9Fca074Ff671c8621F8459' },
+    [CHAIN.VELAS]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "auroraswap": {
-    [CHAIN.AURORA]: { factory: '0xC5E1DaeC2ad401eBEBdd3E32516d90Ab251A3aA3' },
+    [CHAIN.AURORA]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "champagneswap": {
-    [CHAIN.BSC]: { factory: '0xb31A337f1C3ee7fA2b2B83c6F8ee0CA643D807a0' },
+    [CHAIN.BSC]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "chronos": {
-    [CHAIN.ARBITRUM]: { factory: '0xCe9240869391928253Ed9cc9Bcb8cb98CB5B0722' },
+    [CHAIN.ARBITRUM]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "cryptoswap": {
-    [CHAIN.BSC]: { factory: '0x4136A450861f5CFE7E860Ce93e678Ad12158695C' },
+    [CHAIN.BSC]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "defi-kingdoms": {
-    [CHAIN.HARMONY]: { factory: '0x9014B937069918bd319f80e8B3BB4A2cf6FAA5F7' },
+    [CHAIN.HARMONY]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "deltaswap": {
-    [CHAIN.ARBITRUM]: { factory: '0xcb85e1222f715a81b8edaeb73b28182fa37cffa8' },
-    [CHAIN.BASE]: { factory: '0x9a9a171c69cc811dc6b59bb2f9990e34a22fc971' },
-    [CHAIN.ETHEREUM]: { factory: '0x5fbe219e88f6c6f214ce6f5b1fcaa0294f31ae1b' },
+    [CHAIN.ARBITRUM]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
+    [CHAIN.BASE]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
+    [CHAIN.ETHEREUM]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "equalizer-exchange": {
-    [CHAIN.FANTOM]: { factory: '0xc6366efd0af1d09171fe0ebf32c7943bb310832a' },
-    [CHAIN.SONIC]: { factory: '0xDDD9845Ba0D8f38d3045f804f67A1a8B9A528FcC' },
+    [CHAIN.FANTOM]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
+    [CHAIN.SONIC]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "equilibre": {
-    [CHAIN.KAVA]: { factory: '0xA138FAFc30f6Ec6980aAd22656F2F11C38B56a95' },
+    [CHAIN.KAVA]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "heraswap": {
-    [CHAIN.ONUS]: { factory: '0x6CD368495D90b9Ba81660e2b35f7Ea2AcE2B8cD6' },
+    [CHAIN.ONUS]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "hermes-protocol": {
-    [CHAIN.METIS]: { factory: '0x633a093C9e94f64500FC8fCBB48e90dd52F6668F' },
+    [CHAIN.METIS]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "jswap": {
-    [CHAIN.OKEXCHAIN]: { factory: '0xd654CbF99F2907F06c88399AE123606121247D5C' },
+    [CHAIN.OKEXCHAIN]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "kyotoswap": {
-    [CHAIN.BSC]: { factory: '0x1c3E50DBBCd05831c3A695d45D2b5bCD691AD8D8' },
+    [CHAIN.BSC]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "luigiswap": {
-    [CHAIN.SCROLL]: { factory: '0x0dAe6d22182c20AB9150a4DCB3160591Dc41027a' },
+    [CHAIN.SCROLL]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "merchant-moe": {
-    [CHAIN.MANTLE]: { factory: '0x5bef015ca9424a7c07b68490616a4c1f094bedec' },
+    [CHAIN.MANTLE]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "meridian-swap": {
-    [CHAIN.TELOS]: { factory: '0x1F2542D8F784565D526eeaDC9F1ca8Fbb75e5996' },
+    [CHAIN.TELOS]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "miaswap": {
-    [CHAIN.ONUS]: { factory: '0xA5DA4dC244c7aD33a0D8a10Ed5d8cFf078E86Ef3' },
+    [CHAIN.ONUS]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "mimo": {
-    [CHAIN.IOTEX]: { factory: '0xda257cBe968202Dea212bBB65aB49f174Da58b9D', start: '2021-06-22', fees: 0.003, userFeesRatio: 1, revenueRatio: 0, protocolRevenueRatio: 0, holdersRevenueRatio: 0, allowReadPairs: true },
+    [CHAIN.IOTEX]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE', start: '2021-06-22', fees: 0.003, userFeesRatio: 1, revenueRatio: 0, protocolRevenueRatio: 0, holdersRevenueRatio: 0, allowReadPairs: true },
   },
   "mistswap": {
-    [CHAIN.SMARTBCH]: { factory: '0x6008247F53395E7be698249770aa1D2bfE265Ca0' },
+    [CHAIN.SMARTBCH]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "gateswap": {
-    [CHAIN.GATE_LAYER]: { factory: '0xaD8d59f3e026c02Aed0DAdFB46Ceca127030DFa2', start: '2025-09-28', },
+    [CHAIN.GATE_LAYER]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE', start: '2025-09-28', },
   },
   "nearpad": {
-    [CHAIN.AURORA]: { factory: '0x34484b4E416f5d4B45D4Add0B6eF6Ca08FcED8f1' },
+    [CHAIN.AURORA]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "okcswap": {
-    [CHAIN.OKEXCHAIN]: { factory: '0x7b9F0a56cA7D20A44f603C03C6f45Db95b31e539' },
+    [CHAIN.OKEXCHAIN]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "pearl-v1-5": {
-    [CHAIN.REAL]: { factory: '0xAed0A784f357BE9C3f8113BB227a7517a3444Afe' },
+    [CHAIN.REAL]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "pearlfi": {
-    [CHAIN.POLYGON]: { factory: '0xEaF188cdd22fEEBCb345DCb529Aa18CA9FcB4FBd' },
+    [CHAIN.POLYGON]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "photonswap-finance": {
-    [CHAIN.CRONOS]: { factory: '0x462C98Cae5AffEED576c98A55dAA922604e2D875' },
+    [CHAIN.CRONOS]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "ramses-exchange": {
-    [CHAIN.ARBITRUM]: { factory: '0xaaa20d08e59f6561f242b08513d36266c5a29415' },
+    [CHAIN.ARBITRUM]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "satoshiswap": {
-    [CHAIN.CORE]: { factory: '0x8f5c03a1c86bf79ae0baC0D72E75aee662083e26' },
+    [CHAIN.CORE]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "solidlizard": {
-    [CHAIN.ARBITRUM]: { factory: '0x734d84631f00dC0d3FCD18b04b6cf42BFd407074' },
+    [CHAIN.ARBITRUM]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "soulswap": {
-    [CHAIN.FANTOM]: { factory: '0x1120e150dA9def6Fe930f4fEDeD18ef57c0CA7eF' },
+    [CHAIN.FANTOM]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "soy-finance": {
-    [CHAIN.CALLISTO]: { factory: '0x9CC7C769eA3B37F1Af0Ad642A268b80dc80754c5' },
+    [CHAIN.CALLISTO]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "trisolaris": {
-    [CHAIN.AURORA]: { factory: '0xc66F594268041dB60507F00703b152492fb176E7' },
+    [CHAIN.AURORA]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "unicly": {
-    [CHAIN.ETHEREUM]: { factory: '0xbacc776b231c571a7e6ab7bc2c8a099e07153377' },
+    [CHAIN.ETHEREUM]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "verse": {
-    [CHAIN.ETHEREUM]: { factory: '0xee3E9E46E34a27dC755a63e2849C9913Ee1A06E2' },
-    [CHAIN.SMARTBCH]: { factory: '0x16bc2B187D7C7255b647830C05a6283f2B9A3AF8' },
+    [CHAIN.ETHEREUM]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
+    [CHAIN.SMARTBCH]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "voltage": {
-    [CHAIN.FUSE]: { factory: '0x1998E4b0F1F922367d8Ec20600ea2b86df55f34E' },
+    [CHAIN.FUSE]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "wagyuswap": {
-    [CHAIN.VELAS]: { factory: '0x69f3212344a38b35844cce4864c2af9c717f35e3' },
+    [CHAIN.VELAS]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "wannaswap": {
     [CHAIN.AURORA]: { factory: '0x7928D4FeA7b2c90C732c10aFF59cf403f0C38246' },
   },
   "wigoswap": {
-    [CHAIN.FANTOM]: { factory: '0xc831a5cbfb4ac2da5ed5b194385dfd9bf5bfcba7' },
+    [CHAIN.FANTOM]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "wineryswap": {
-    [CHAIN.BSC]: { factory: '0x79C342FddBBF376cA6B4EFAc7aaA457D6063F8Cb' },
+    [CHAIN.BSC]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "wojak-finance": {
-    [CHAIN.DOGECHAIN]: { factory: '0xc7c86B4f940Ff1C13c736b697e3FbA5a6Bc979F9' },
+    [CHAIN.DOGECHAIN]: { factory: '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE' },
   },
   "yieldfields": {
-    [CHAIN.BSC]: { factory: '0x0A376eE063184B444ff66a9a22AD91525285FE1C' },
+    [CHAIN.BSC]: { factory: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1' },
   },
   "yoshi-exchange": {
     [CHAIN.FANTOM]: { factory: '0xc5bc174cb6382fbab17771d05e6a918441deceea' },
