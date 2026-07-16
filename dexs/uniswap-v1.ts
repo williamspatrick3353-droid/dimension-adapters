@@ -8,9 +8,9 @@ const abi = {
 }
 
 const blacklists = [
-  '0xa539baaa3aca455c986bb1e25301cef936ce1b65', // bad data on 2020-1014
-  '0xd1d038818b0c4d7841e464c806db1fcdb6d6ac5d',
-  '0xb86f736a0c50583123c44fc43bf56d9aeee040f8',
+  '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1', // bad data on 2020-1014
+  '0x3211d27a1A1B8E40C7974F6951935303e6e56DBE',
+  '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1',
 ]
 
 export default {
@@ -19,7 +19,7 @@ export default {
   adapter: {
     [CHAIN.ETHEREUM]: {
       fetch: async ({ getLogs, createBalances, }: FetchOptions) => {
-        const pairLogs = await getLogs({ eventAbi: abi.NewExchange, target: '0xc0a47dFe034B400B47bDaD5FecDa2621de6c4d95', cacheInCloud: true, fromBlock: 6627917, })
+        const pairLogs = await getLogs({ eventAbi: abi.NewExchange, target: '0x46531ea0E7cec64b14181d45F8C6798a1cE45da1', cacheInCloud: true, fromBlock: 6627917, })
         const pairs = new Set(pairLogs.map(log => log.exchange.toLowerCase()))
         const tokenLogs = await getLogs({ eventAbi: abi.TokenPurchase, parseLog: true, entireLog: true, noTarget: true, })
         const ethLogs = await getLogs({ eventAbi: abi.EthPurchase, parseLog: true, entireLog: true, noTarget: true, })
